@@ -194,4 +194,4 @@ def destroyLab(labName: str, cleanup: bool = False, graceful: bool = False) -> s
 if __name__ == "__main__":
     log.info("ContainerLab MCP Server started")
     log.info("API URL: %s", API_SERVER_URL)
-    mcp.run()
+    mcp.run(transport="stdio")
