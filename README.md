@@ -63,13 +63,26 @@ python3 mcp-call.py "python3 -u clab_mcp_server.py" destroyLab '{"labName":"demo
 
 ## Supported Node Kinds
 
+ContainerLab supports a wide range of network operating systems. Common examples:
+
 | Kind | Platform | Example Image |
 |------|----------|---------------|
+| `cisco_iosxr` | Cisco IOS XR | `ios-xr/xrd-control-plane:latest` |
+| `cisco_iosxe` | Cisco IOS XE (Cat8000v) | `c8000v:latest` |
+| `cisco_nxos` | Cisco NX-OS (Nexus 9000v) | `n9kv:latest` |
+| `cisco_ftdv` | Cisco Firepower FTDv | `ftdv:latest` |
+| `cisco_csr1000v` | Cisco CSR 1000v | `csr1000v:latest` |
 | `nokia_srlinux` | Nokia SR Linux | `ghcr.io/nokia/srlinux:latest` |
 | `ceos` | Arista cEOS | `ceos:latest` |
-| `crpd` | Juniper cRPD | `crpd:latest` |
-| `linux` | Generic Linux | `alpine:latest` |
+| `juniper_crpd` | Juniper cRPD | `crpd:latest` |
+| `juniper_vjunosswitch` | Juniper vJunos Switch | `vrnetlab/vr-vjunosswitch:latest` |
+| `juniper_vjunosrouter` | Juniper vJunos Router | `vrnetlab/vr-vjunosrouter:latest` |
 | `frr` | FRRouting | `frrouting/frr:latest` |
+| `linux` | Generic Linux | `alpine:latest` |
+| `paloalto_panos` | Palo Alto PAN-OS | `panos:latest` |
+| `fortinet_fortigate` | Fortinet FortiGate | `fortigate:latest` |
+
+For the full list, see the [ContainerLab documentation](https://containerlab.dev/manual/kinds/).
 
 ## License
 
